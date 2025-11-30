@@ -1,0 +1,10 @@
+name: First Workflow # Nombre de la accion
+on: workflow_dispatch  # Trigger manual
+jobs: 
+  first-job: 
+    runs-on: ubuntu-latest # SO en el que corre
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!" # Comando de CMD
+      - name: Print goodbye
+        run: echo "Done - bye!"
